@@ -1,0 +1,12 @@
+C:\Users\huulu\source\repos\Core\ExcEnglish\Sercurity\bin\Debug\net6.0\Sercurity.deps.json
+C:\Users\huulu\source\repos\Core\ExcEnglish\Sercurity\bin\Debug\net6.0\Sercurity.dll
+C:\Users\huulu\source\repos\Core\ExcEnglish\Sercurity\bin\Debug\net6.0\Sercurity.pdb
+C:\Users\huulu\source\repos\Core\ExcEnglish\Sercurity\obj\Debug\net6.0\Sercurity.csproj.AssemblyReference.cache
+C:\Users\huulu\source\repos\Core\ExcEnglish\Sercurity\obj\Debug\net6.0\Sercurity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\huulu\source\repos\Core\ExcEnglish\Sercurity\obj\Debug\net6.0\Sercurity.AssemblyInfoInputs.cache
+C:\Users\huulu\source\repos\Core\ExcEnglish\Sercurity\obj\Debug\net6.0\Sercurity.AssemblyInfo.cs
+C:\Users\huulu\source\repos\Core\ExcEnglish\Sercurity\obj\Debug\net6.0\Sercurity.csproj.CoreCompileInputs.cache
+C:\Users\huulu\source\repos\Core\ExcEnglish\Sercurity\obj\Debug\net6.0\Sercurity.dll
+C:\Users\huulu\source\repos\Core\ExcEnglish\Sercurity\obj\Debug\net6.0\refint\Sercurity.dll
+C:\Users\huulu\source\repos\Core\ExcEnglish\Sercurity\obj\Debug\net6.0\Sercurity.pdb
+C:\Users\huulu\source\repos\Core\ExcEnglish\Sercurity\obj\Debug\net6.0\ref\Sercurity.dll
