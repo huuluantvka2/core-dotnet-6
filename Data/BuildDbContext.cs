@@ -1,11 +1,14 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Model.Entities;
+using Model.Entities.Identities;
 using Model.Interfaces;
+using System.Security.Claims;
 
 namespace Data
 {
-    public class BuildDbContext : DbContext
+    public class BuildDbContext : IdentityUserContext<User, Guid>
     {
         private readonly IHttpContextAccessor? _httpContextAccessor;
         public BuildDbContext(DbContextOptions<BuildDbContext> options, IHttpContextAccessor? httpContextAccessor) : base(options)
@@ -18,6 +21,10 @@ namespace Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating((modelBuilder));
+            var entityTypes = modelBuilder.Model.GetEntityTypes();
+            foreach (var entityType in entityTypes)
+                modelBuilder.Entity(entityType.ClrType)
+                       .ToTable(entityType.GetTableName().Replace("AspNet", ""));
         }
 
         public override int SaveChanges()
@@ -33,17 +40,24 @@ namespace Data
             {
                 if (entry.Entity is IAudit)
                 {
-                    var audit = (IAudit)entry.Entity;
-                    var now = DateTime.UtcNow;
-                    switch (entry.State)
+                    if (_httpContextAccessor.HttpContext != null && _httpContextAccessor?.HttpContext.User != null)
                     {
-                        case EntityState.Added:
-                            audit.CreatedAt = now;
-                            break;
-                        case EntityState.Modified:
-                            audit.UpdatedAt = now;
-                            break;
+                        var userId = _httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.Name).Value;
+                        var audit = (IAudit)entry.Entity;
+                        var now = DateTime.UtcNow;
+                        switch (entry.State)
+                        {
+                            case EntityState.Added:
+                                audit.CreatedAt = now;
+                                audit.CreatedBy = "userId";
+                                break;
+                            case EntityState.Modified:
+                                audit.UpdatedAt = now;
+                                audit.UpdatedBy = "userId";
+                                break;
+                        }
                     }
+
                 }
             }
         }

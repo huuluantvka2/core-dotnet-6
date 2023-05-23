@@ -4,7 +4,6 @@ namespace DTO.Feedback
 {
     public class FeebbackCreateDTO
     {
-        public Guid UserId { get; set; }
         public string Description { get; set; }
     }
 

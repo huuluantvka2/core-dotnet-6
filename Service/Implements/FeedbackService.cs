@@ -17,7 +17,6 @@ namespace Service.Implements
             var entity = new FeedBack()
             {
                 Description = dto.Description,
-                UserId = dto.UserId,
             };
             UnitOfWork.FeedBacksRepo.Insert(entity);
             UnitOfWork.SaveChanges();
@@ -25,7 +24,17 @@ namespace Service.Implements
 
         public List<FeebbackItemDTO> Get()
         {
-            throw new NotImplementedException();
+            var entities = UnitOfWork.FeedBacksRepo.GetAll().Select(x => new FeebbackItemDTO()
+            {
+                Id = x.Id,
+                Description = x.Description,
+                CreatedAt = x.CreatedAt,
+                CreatedBy = x.CreatedBy,
+                UpdatedAt = x.UpdatedAt,
+                UpdatedBy = x.UpdatedBy,
+                UserId = x.UserId
+            }).ToList();
+            return entities;
         }
 
         public void Update(FeebbackUpdateDTO dto)

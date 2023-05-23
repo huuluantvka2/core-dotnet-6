@@ -71,3 +71,13 @@ C:\Users\huulu\source\repos\Core\ExcEnglish\WebApi\bin\Debug\net6.0\DTO.dll
 C:\Users\huulu\source\repos\Core\ExcEnglish\WebApi\bin\Debug\net6.0\Service.dll
 C:\Users\huulu\source\repos\Core\ExcEnglish\WebApi\bin\Debug\net6.0\Service.pdb
 C:\Users\huulu\source\repos\Core\ExcEnglish\WebApi\bin\Debug\net6.0\DTO.pdb
+C:\Users\huulu\source\repos\Core\ExcEnglish\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\huulu\source\repos\Core\ExcEnglish\WebApi\bin\Debug\net6.0\Sercurity.dll
+C:\Users\huulu\source\repos\Core\ExcEnglish\WebApi\bin\Debug\net6.0\Sercurity.pdb
+C:\Users\huulu\source\repos\Core\ExcEnglish\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\huulu\source\repos\Core\ExcEnglish\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\huulu\source\repos\Core\ExcEnglish\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\huulu\source\repos\Core\ExcEnglish\WebApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\huulu\source\repos\Core\ExcEnglish\WebApi\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\huulu\source\repos\Core\ExcEnglish\WebApi\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\huulu\source\repos\Core\ExcEnglish\WebApi\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll

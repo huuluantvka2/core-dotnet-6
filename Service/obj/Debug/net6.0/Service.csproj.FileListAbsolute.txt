@@ -17,3 +17,5 @@ C:\Users\huulu\source\repos\Core\ExcEnglish\Service\bin\Debug\net6.0\Data.pdb
 C:\Users\huulu\source\repos\Core\ExcEnglish\Service\bin\Debug\net6.0\DTO.pdb
 C:\Users\huulu\source\repos\Core\ExcEnglish\Service\bin\Debug\net6.0\Model.pdb
 C:\Users\huulu\source\repos\Core\ExcEnglish\Service\obj\Debug\net6.0\Service.csproj.CopyComplete
+C:\Users\huulu\source\repos\Core\ExcEnglish\Service\bin\Debug\net6.0\Sercurity.dll
+C:\Users\huulu\source\repos\Core\ExcEnglish\Service\bin\Debug\net6.0\Sercurity.pdb

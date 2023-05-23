@@ -1,9 +1,11 @@
 ﻿using DTO.Feedback;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Service.Interfaces;
 
 namespace WebApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class FeedbackController : ControllerBase
@@ -14,11 +16,25 @@ namespace WebApi.Controllers
             _feedbackService = feedbackService;
         }
         [HttpPost("")]
-        public ActionResult Get([FromBody] FeebbackCreateDTO dto)
+        public ActionResult Create([FromBody] FeebbackCreateDTO dto)
         {
-            dto.UserId = Guid.Parse("ce5be9a5-59f7-4d57-8425-771a8e31b0d6");
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             _feedbackService.Create(dto);
             return Ok(new { success = true });
+        }
+
+        [HttpGet("")]
+        public ActionResult Get()
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            var data = _feedbackService.Get();
+            return Ok(new { success = true, data = data });
         }
     }
 }

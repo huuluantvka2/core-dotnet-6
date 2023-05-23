@@ -3,19 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{A9F3B697-1048-4E21-AA53-8E114391937A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{A9F3B697-1048-4E21-AA53-8E114391937A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{E99DE62F-AC7F-47A8-9D13-C99FD0F1DB91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{E99DE62F-AC7F-47A8-9D13-C99FD0F1DB91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{5E638007-91BB-434A-AACA-AA837BFC4A39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DTO", "DTO\DTO.csproj", "{5E638007-91BB-434A-AACA-AA837BFC4A39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sercurity", "Sercurity\Sercurity.csproj", "{47D3F595-0A4F-45D5-AD9B-D7068B978D0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sercurity", "Sercurity\Sercurity.csproj", "{47D3F595-0A4F-45D5-AD9B-D7068B978D0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{158B06D8-462C-4D38-BF96-1A51FB0A7D16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{158B06D8-462C-4D38-BF96-1A51FB0A7D16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{CD86931F-EC3B-4807-932B-C440443AF6E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{CD86931F-EC3B-4807-932B-C440443AF6E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{00883D7D-4647-49BB-BE9C-BB1AF423E759}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{00883D7D-4647-49BB-BE9C-BB1AF423E759}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{C608D6B7-CD5C-4C18-AC5D-0B498F809847}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{00883D7D-4647-49BB-BE9C-BB1AF423E759}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00883D7D-4647-49BB-BE9C-BB1AF423E759}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00883D7D-4647-49BB-BE9C-BB1AF423E759}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C608D6B7-CD5C-4C18-AC5D-0B498F809847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C608D6B7-CD5C-4C18-AC5D-0B498F809847}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C608D6B7-CD5C-4C18-AC5D-0B498F809847}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C608D6B7-CD5C-4C18-AC5D-0B498F809847}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,3 +10,10 @@ C:\Users\huulu\source\repos\Core\ExcEnglish\Sercurity\obj\Debug\net6.0\Sercurity
 C:\Users\huulu\source\repos\Core\ExcEnglish\Sercurity\obj\Debug\net6.0\refint\Sercurity.dll
 C:\Users\huulu\source\repos\Core\ExcEnglish\Sercurity\obj\Debug\net6.0\Sercurity.pdb
 C:\Users\huulu\source\repos\Core\ExcEnglish\Sercurity\obj\Debug\net6.0\ref\Sercurity.dll
+C:\Users\huulu\source\repos\Core\ExcEnglish\Sercurity\bin\Debug\net6.0\DTO.dll
+C:\Users\huulu\source\repos\Core\ExcEnglish\Sercurity\bin\Debug\net6.0\Model.dll
+C:\Users\huulu\source\repos\Core\ExcEnglish\Sercurity\bin\Debug\net6.0\DTO.pdb
+C:\Users\huulu\source\repos\Core\ExcEnglish\Sercurity\bin\Debug\net6.0\Model.pdb
+C:\Users\huulu\source\repos\Core\ExcEnglish\Sercurity\obj\Debug\net6.0\Sercurity.csproj.CopyComplete
+C:\Users\huulu\source\repos\Core\ExcEnglish\Sercurity\bin\Debug\net6.0\Data.dll
+C:\Users\huulu\source\repos\Core\ExcEnglish\Sercurity\bin\Debug\net6.0\Data.pdb
