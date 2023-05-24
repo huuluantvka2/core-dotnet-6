@@ -6,6 +6,6 @@ namespace Service.Interfaces
     {
         void Create(FeebbackCreateDTO dto);
         void Update(FeebbackUpdateDTO dto);
-        List<FeebbackItemDTO> Get();
+        Task<List<FeebbackItemDTO>> GetFeedBacks();
     }
 }

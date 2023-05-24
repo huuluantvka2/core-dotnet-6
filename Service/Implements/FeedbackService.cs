@@ -1,5 +1,6 @@
 ﻿using Data.Infracstructure;
 using DTO.Feedback;
+using Microsoft.EntityFrameworkCore;
 using Model.Entities;
 using Service.Interfaces;
 
@@ -22,9 +23,9 @@ namespace Service.Implements
             UnitOfWork.SaveChanges();
         }
 
-        public List<FeebbackItemDTO> Get()
+        public async Task<List<FeebbackItemDTO>> GetFeedBacks()
         {
-            var entities = UnitOfWork.FeedBacksRepo.GetAll().Select(x => new FeebbackItemDTO()
+            var entities = await UnitOfWork.FeedBacksRepo.GetAll().Select(x => new FeebbackItemDTO()
             {
                 Id = x.Id,
                 Description = x.Description,
@@ -33,7 +34,7 @@ namespace Service.Implements
                 UpdatedAt = x.UpdatedAt,
                 UpdatedBy = x.UpdatedBy,
                 UserId = x.UserId
-            }).ToList();
+            }).ToListAsync();
             return entities;
         }
 

@@ -27,13 +27,13 @@ namespace WebApi.Controllers
         }
 
         [HttpGet("")]
-        public ActionResult Get()
+        public async Task<ActionResult> GetFeedBacks()
         {
-            if (!ModelState.IsValid)
+            var data = await _feedbackService.GetFeedBacks();
+            if (data.Count == 0)
             {
-                return BadRequest(ModelState);
+                return NoContent();
             }
-            var data = _feedbackService.Get();
             return Ok(new { success = true, data = data });
         }
     }
